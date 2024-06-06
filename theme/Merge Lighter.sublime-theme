@@ -4560,7 +4560,7 @@
             "attributes": [
                 "selected"
             ],
-            "layer1.tint": "var(headerBg)",
+            "layer1.tint": "var(background1)",
             "tint_modifier": [
                 255,
                 255,
@@ -4598,7 +4598,8 @@
             "class": "tab_label",
             "fg": "var(tabLabelColor)",
             "font.face": "var(font_face)",
-            "font.size": "var(font_size)"
+            "font.size": "var(font_size)",
+            "font.bold": false
         },
         {
             "class": "tab_label",
@@ -4626,7 +4627,8 @@
                     ]
                 }
             ],
-            "fg": "var(tabLabelColorSelected)"
+            "fg": "var(tabLabelColorSelected)",
+            "font.bold": true,
         },
         {
             "class": "tab_close_button",
