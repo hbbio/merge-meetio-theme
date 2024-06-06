@@ -2,8 +2,9 @@
     "extends": "Merge.sublime-theme",
     "variables": {
         "cursor": "#272727",
-        "foreground": "#455A64",
-        "background": "#FBFBFB",
+        "foreground": "#272727",
+        "background1": "#EEE9CB",
+        "background": "#D6D2B7",
         "comments": "#90A4AE",
         "blue": "#6182B8",
         "brown": "#916B53",
@@ -24,8 +25,8 @@
         "accentDarker": "color(var(background) l(- 1.00%))",
         "accentDarkest": "color(var(background) l(- 2.00%))",
         "accentLight": "color(var(background) l(+ 2%))",
-        "accentLighter": "color(var(background) l(+ 4%))",
-        "accentLightest": "color(var(background) l(+ 10%))",
+        "accentLighter": "color(var(background1))",
+        "accentLightest": "color(var(background1) l(+ 10%))",
         "darkGray": "hsl(210, 10%, 10%)",
         "labelColor": "var(foreground)",
         "helpLabelColor": "color(var(foreground) a(0.6))",
@@ -108,7 +109,7 @@
         "insertedAnnBg": "color(var(cyan) a(0.50))",
         "deletedAnnBg": "color(var(red) a(0.50))",
         "fileDiffShadow": "color(black a(0.5))",
-        "fileIconBg": "color(white a(0.2))",
+        "fileIconBg": "color(white a(0.5))",
         "hunkButtonFg": "var(foreground)",
         "hunkButtonShadow": "color(black a(0.5))",
         "fileHeaderBg": "var(background)",
@@ -219,14 +220,14 @@
             "attributes": [
                 "hover"
             ],
-            "layer0.opacity": 0.1
+            "layer0.opacity": 0.5
         },
         {
             "class": "table_row",
             "attributes": [
                 "selected"
             ],
-            "layer0.opacity": 0.2
+            "layer0.opacity": 1
         },
         {
             "class": "table_row",
@@ -1148,7 +1149,7 @@
             "attributes": [
                 "hover"
             ],
-            "layer0.opacity": 1,
+            "layer0.opacity": 0.5,
             "layer0.tint": "var(accentLighter)"
         },
         {
@@ -1955,7 +1956,7 @@
             "class": "location_bar_heading",
             "font.face": "var(font_face)",
             "font.size": "var(font_size)",
-            "font.bold": true,
+            "font.bold": false,
             "color": "var(locationBarFg)",
             "shadow_color": "var(location_bar_heading_shadow)",
             "shadow_offset": [
@@ -4060,7 +4061,7 @@
         },
         {
             "class": "tool_tip_control",
-            "layer0.tint": "var(foreground)",
+            "layer0.tint": "var(comments)",
             "layer0.opacity": 1,
             "content_margin": [
                 8,
